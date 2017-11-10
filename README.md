@@ -15,11 +15,16 @@ Enrolled and Wishlist: You can add courses as enrolled and add to wishlist for f
 
 
 ADVANCED MODULES:(In Development)
+
 Sign In : You can sign in using google and facebook account
+
 Ranking Feature: The ranking feature lets the user to upvote the courses if they like it and more upvoted the courses are more higher the courses are ranked. It helps user the get the most popular, relevant and authentic course.  
+
 Youtube Support : There are so many useful tutorials available on youtube with rich content , as the rating module will give the  users will get the perfect tutorial they are looking for.
  Courses Duration & Completion: User will be shown live duration which they are attending the courses from the enrolment day to the completion date
+
 Assignments Notifications: The users will live notifications from the particular MOOC’s website of their assignment deadlines and week dates.
+
 Recommended Courses: Users will get the recommended courses according to the enrolled and wishlist courses and search pattern.
 
 The app can run on Windows, Android and iOS Devices as its and Progressive made using Ionic 3
