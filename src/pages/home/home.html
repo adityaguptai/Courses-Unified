@@ -1,0 +1,128 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="getstart">
+  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar><!-- funtion (ionInput)="getItems($event)" -->
+  <ion-slides spacer options="{'loop': true}" style="width:calc(100% + 20px);height:calc(30% + 20px);margin-left:-10px;" >
+
+    <ion-slide style="background:url(http://blog.debugme.eu/wp-content/uploads/2016/01/Cover-Image.png) no-repeat center;background-size:cover;">
+    </ion-slide>
+
+    <ion-slide style="background:url(http://www.exuberantsolutions.com/course_logo/Machine-Learning-01.png) no-repeat center;background-size:cover;" >
+    </ion-slide>
+ 
+    <ion-slide style="background:url(https://cdn.bestleap.com/wp-content/uploads/2016/12/Coursena-Top-Data-Science-and-Computer-Science-Course-Online.png) no-repeat center;background-size:cover;">
+    </ion-slide>
+
+  </ion-slides>
+<!--
+<ion-item *ngFor="let post of posts">
+      <img [src]="post.image" />
+    </ion-item>
+<ion-card >
+-->
+
+    <ion-chip color="secondary" (click)="flaginv()" full>
+        <ion-icon name="ios-arrow-dropdown-circle" color="secondary"></ion-icon>
+        <button ion-button round color="secondary" full>Filters</button>
+    </ion-chip>
+
+<div *ngIf="showElement">
+<ion-chip >
+        <button ion-button round color="primary" >--Upvotes--</button>
+</ion-chip>
+<ion-item>
+    <ion-range min="0" max="200" step="10" snaps="true" [(ngModel)]="upvotes" color="secondary" (mouseover)="filterdataupvotes()">
+      <ion-icon small range-left name="thumbs-up" color="primary"></ion-icon>
+      <ion-label range-left>0</ion-label>
+      <ion-label range-right>300</ion-label>
+    </ion-range>
+</ion-item>
+
+
+    <ion-list radio-group [(ngModel)]="lev" >
+    <ion-chip >
+        <button ion-button round color="yellow" >--Levels--</button>
+    </ion-chip>
+
+    <ion-item>
+      <ion-label>All</ion-label>
+      <ion-radio checked="true" value="all" (click)="level()"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Beginner</ion-label>
+      <ion-radio  value="beg" (click)="level()"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Intermediate</ion-label>
+      <ion-radio value="int" (click)="level()"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Advanced</ion-label>
+      <ion-radio value="adv" (click)="level()"></ion-radio>
+    </ion-item>
+  </ion-list>
+
+
+
+<button ion-button round color="danger" (click)="resetdata()">Reset</button>
+</div>
+<!--
+<ion-item>
+    <ion-range min="0.0" max="5.0" step="0.5" snaps="true" [(ngModel)]="rating" color="secondary" (mouseover)="filterdatarating(rating)">
+      <ion-icon small range-left name="star"></ion-icon>
+      <ion-label range-left>0</ion-label>
+      <ion-label range-right>5</ion-label>
+    </ion-range>
+</ion-item>
+<button ion-button block round color="primary" (click)="filterdata(upvotes)">Filter</button>
+<button ion-button block round color="danger" (click)="resetdata()">Reset</button>
+<button block round (click)="filterdata(upvotes)">Filter</button>-->
+<br/>
+<ion-chip color="dark">
+  <ion-icon name="md-trending-up" color="danger"></ion-icon>
+  <ion-label>Trending Courses</ion-label>
+</ion-chip>
+
+<ion-card *ngFor="let post of posts">
+  <img [src]="post.image" (click)="navPage2(post)" />
+    <ion-item (click)="navPage2(post)">
+      <ion-avatar item-left>
+       <img [src]="post.cover" />
+     </ion-avatar>
+     <h2>{{post.title}}</h2>
+     <p>{{post.organization}}</p>
+   </ion-item>
+
+    <ion-row>
+    <ion-col>
+      <button ion-button icon-left clear small (click)="incupvotes(post.upvotes)">
+        <ion-icon  name="thumbs-up" ></ion-icon>
+        <div *ngIf="up==true || toggle==false">{{post.upvotes}}</div>
+        <div *ngIf="up==false || toggle==true">{{x}}</div>
+      </button>
+    </ion-col>
+    <ion-col>
+      <button ion-button icon-left clear small>
+        <ion-icon name="star"></ion-icon>
+        <div>{{post.ratings}} Stars({{post.userratings}})</div>
+      </button>
+    </ion-col>
+    <ion-col center text-center>
+      <ion-note>
+        {{post.fees}}
+      </ion-note>
+    </ion-col>
+  </ion-row>
+</ion-card>
+
+</ion-content>

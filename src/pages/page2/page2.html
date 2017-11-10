@@ -1,0 +1,50 @@
+<ion-header >
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Course Page</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="getstart">
+<div>
+<h4 style="color:#000000;font-weight:400;text-align:center;">{{this.navParams.get('title')}}</h4>
+<h6 style="color:#000000;text-align:center;">{{this.navParams.get('organization')}}</h6>
+<!--<ion-img width="calc(100% + 20px)" height="150px" [src]="this.navParams.get('image')"></ion-img>-->
+ <h6 style="color:#000000;"><b>Trailer Video</b></h6>
+<iframe  width="calc(100% + 20px)" height="150px " [src]="this.navParams.get('trailer_video')|youtube"  align="middle" frameborder="0" allowfullscreen></iframe>
+  <h6 style="color:#000000;"><b>About this Course</b></h6>
+    <div class="show-list-numbers-and-dots">
+      <p style="color:#000000;">{{this.navParams.get('subtitle')}}</p>
+      <p style="color:#000000;"><b>Discipline:</b> {{this.navParams.get('discipline')}}</p>
+      <p style="color:#000000;"><b>Knowledge Level:</b> {{this.navParams.get('knowledge_level')}}</p>
+      <p style="color:#000000;"><b>Instructor:</b> {{this.navParams.get('instructors')}}</p>
+      <p style="color:#000000;"><b>Duration:</b> {{this.navParams.get('duration')}} hrs</p>
+      <ion-chip color="secondary">
+        <ion-icon name="md-star" ></ion-icon>
+        <ion-label>{{this.navParams.get('ratings')}}({{this.navParams.get('userratings')}})</ion-label>
+      </ion-chip>
+      <ion-chip color="secondary">
+        <ion-icon name="thumbs-up" color="primary"></ion-icon>
+        <ion-label>{{x}}</ion-label>
+      </ion-chip>
+
+    </div>
+    <h6 style="color:#000000;"><b>What you'll Learn</b></h6>
+    <div class="show-list-numbers-and-dots">
+      <p style="color:#000000;">This course provides a broad introduction to machine learning, datamining, and statistical pattern recognition. Topics include: (i) Supervised learning (parametric/non-parametric algorithms, support vector machines, kernels, neural networks). (ii)
+        Unsupervised learning (clustering, dimensionality reduction, recommender systems, deep learning). (iii) Best practices in machine learning (bias/variance theory; innovation process in machine learning and AI). The course will also draw from numerous
+        case studies and applications, so that you'll also learn how to apply learning algorithms to building smart robots (perception, control), text understanding (web search, anti-spam), computer vision, medical informatics, audio, database mining,
+        and other areas.</p>
+    </div>
+    <ion-fab right bottom>
+    <button ion-fab ><ion-icon name="arrow-dropup-circle"></ion-icon></button>
+    <ion-fab-list side="top">
+      <button ion-fab color="danger" (click)="navWL(this.navParams)"><ion-icon name="bookmark"></ion-icon></button>
+      <button ion-fab color="dark" (click)="navEC(this.navParams)"><ion-icon name="checkmark-circle-outline"></ion-icon></button>
+      <button ion-fab color="secondary" (click)='openUrl()'><ion-icon name="link"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
+  </div>
+</ion-content>

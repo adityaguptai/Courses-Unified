@@ -1,0 +1,32 @@
+<!--
+  Generated template for the EnrolledCourses page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Enrolled Courses</ion-title> 
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content class="getstart">
+
+<ion-card *ngFor="let post of posts">
+    <ion-item (click)="navPage2(post)">
+      <ion-avatar item-left>
+       <img [src]="post.image" />
+     </ion-avatar>
+     <h2>{{post.title}}</h2>
+     <p>{{post.moocsite}}</p>
+     <p>{{post.organization}}</p>
+   </ion-item>
+
+</ion-card>
+
+</ion-content>
