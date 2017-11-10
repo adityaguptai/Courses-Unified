@@ -1,0 +1,2 @@
+# Courses-Unified
+Courses Unified is about finding for MOOC’s from various MOOC’s websites like Coursera, edX, Udemy, Udacity etc.It will help users to find the best and most popular courses aggregating it from various websites. It ranks courses according to the users rating and upvotes. User can also add the course to enrolled or in the wishlist. User can filter the courses according to the price, date and websites. User can also ask to directly navigate to the MOOC Course Page and buy the Course from within the app.
