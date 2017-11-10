@@ -7,6 +7,7 @@ The App is made using the Progressive Apps Approach so the following technologie
 4)	Node JS Framework
 5)	JSON data(for retriving the information)
 
+
 MODULES:
 
 Filtering: User can filter the courses according to price like they want paid or free course. Also you can filter whether you want by current, upcoming and self-paced. 
