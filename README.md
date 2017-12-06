@@ -7,9 +7,10 @@ The App is made using the Progressive Apps Approach so the following technologie
 4)	Node JS Framework
 5)	JSON data(for retriving the information)
 
+##Screeshots
+<img src="https://user-images.githubusercontent.com/236501/32385619-bddac0ac-c08c-11e7-9ee4-9c892197191f.png" width="400" />
 
-
-#MODULES:
+##MODULES:
 
 Filtering: User can filter the courses according to price like they want paid or free course. Also you can filter whether you want by current, upcoming and self-paced. 
 
@@ -17,7 +18,7 @@ Enrolled and Wishlist: You can add courses as enrolled and add to wishlist for f
 
 
 
-#ADVANCED MODULES:(In Development)
+##ADVANCED MODULES:(In Development)
 
 Sign In : You can sign in using google and facebook account
 
@@ -32,7 +33,7 @@ Recommended Courses: Users will get the recommended courses according to the enr
 
 The app can run on Windows, Android and iOS Devices as its and Progressive made using Ionic 3
 
-References
+##References
 Websites:
 1)	http://ionicframework.com/docs/
 2)	http://cordova.apache.org/docs/
