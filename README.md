@@ -8,8 +8,8 @@ The App is made using the Progressive Apps Approach so the following technologie
 5)	JSON data(for retriving the information)
 
 ## Screeshots
-<img src="https://ibb.co/nFgDnw" width="400" />
-<img src="https://ibb.co/dQkv0G" width="400" />
+<img src="https://image.ibb.co/jQw2fG/ice_screenshot_20171206_210126.png" width="400" />
+<img src="https://image.ibb.co/dmA67w/ice_screenshot_20171206_210633.png" width="400" />
 
 ## MODULES:
 
